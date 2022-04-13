@@ -20,7 +20,7 @@ class Database:
             self.conn.commit()
         except:
             
-            print(f'{c} duplicate(s) found')
+            print('Duplicates found')
         
     def select(self):
         data = self.cursor.execute("SELECT * FROM ARTICLE")
